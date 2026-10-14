@@ -1,0 +1,196 @@
+body {
+  background: #f4f4f4;
+}
+
+.container {
+  max-width: 1170px;
+  background: #fff;
+}
+
+header {
+  position: relative;
+  height: 190px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  background: linear-gradient(110deg, #176b8a, #43a2ad 65%, #c3dfd0);
+}
+
+.header-object {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  width: 240px;
+  max-height: 180px;
+}
+
+.shopping-mall {
+  position: absolute;
+  z-index: 1;
+  bottom: 20px;
+  left: 28px;
+  font-variant: small-caps;
+  color: #fff;
+}
+
+.shopping-mall > h1 {
+  margin: 0;
+  padding-bottom: 5px;
+  border-bottom: 1px dotted rgba(255, 255, 255, .8);
+  color: #fff;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: clamp(32px, 5vw, 50px);
+  letter-spacing: .3px;
+  text-shadow: 0 0 3px #173a45;
+}
+
+.shopping-mall > h5 {
+  margin: 7px 0 0;
+  color: #f5ffff;
+  letter-spacing: .5px;
+  text-shadow: 0 1px 2px #173a45;
+}
+
+.navbar {
+  margin-bottom: 15px;
+}
+
+.navbar-inverse {
+  background-color: #174e63;
+  border-color: #123e4f;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover {
+  background-color: #26758b;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #d7f1dc;
+  background-color: #21647a;
+}
+
+.navbar-nav > li > a .glyphicon {
+  margin-right: 4px;
+}
+
+.poly-cart {
+  margin-top: 5px;
+}
+
+.poly-cart ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-variant: small-caps;
+}
+
+.poly-cart .panel-heading strong {
+  font-size: larger;
+  font-variant: small-caps;
+  text-shadow: 0 0 2px darkgray;
+}
+
+.cart-body {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cart-body img {
+  width: 42%;
+  max-height: 76px;
+  object-fit: contain;
+}
+
+.cart-body ul {
+  flex: 1;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.poly-prod {
+  padding: 5px;
+  text-align: center;
+}
+
+.poly-prod .panel {
+  transition: box-shadow .2s ease, transform .2s ease;
+}
+
+.poly-prod .panel:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 16px rgba(0, 0, 0, .13);
+}
+
+.poly-prod .panel-heading {
+  min-height: 38px;
+}
+
+.poly-prod .panel-body {
+  display: grid;
+  height: 165px;
+  place-items: center;
+}
+
+.poly-prod .panel-body img {
+  width: 95%;
+  height: 145px;
+  object-fit: contain;
+}
+
+.poly-prod .panel-footer {
+  color: #22657b;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+footer.panel {
+  margin-top: 16px;
+  margin-bottom: 15px;
+}
+
+footer .panel-heading p {
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  header {
+    height: 165px;
+  }
+
+  .header-object {
+    right: 5px;
+    width: 150px;
+    max-height: 135px;
+    opacity: .75;
+  }
+
+  .shopping-mall {
+    bottom: 17px;
+    left: 17px;
+    max-width: 78%;
+  }
+
+  .shopping-mall > h1 {
+    font-size: clamp(27px, 7vw, 40px);
+  }
+
+  .shopping-mall > h5 {
+    max-width: 280px;
+    font-size: 11px;
+  }
+
+  .poly-prod .panel-body {
+    height: 150px;
+  }
+
+  .poly-prod .panel-body img {
+    height: 130px;
+  }
+}
